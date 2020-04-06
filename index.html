@@ -24,7 +24,28 @@
 				Get in Touch : <a href = "mailto: abhi@bradar.co">Contact Us.</a>
 			</header>
 
+background: linear-gradient(270deg, #282828, #ff0000);
+background-size: 400% 400%;
 
+-webkit-animation: AnimationName 31s ease infinite;
+-moz-animation: AnimationName 31s ease infinite;
+animation: AnimationName 31s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
 
 		<!-- Signup Form 
 			<form id="signup-form" method="post" action="#">
@@ -47,9 +68,12 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/main.js"></script>
-			<!-- Start of HubSpot Embed Code -->
-			  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6385239.js"></script>
-			<!-- End of HubSpot Embed Code -->
+		<!-- Calendly badge widget begin -->
+			<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+			<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+			<script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/bradar-co', text: 'Schedule time with me', color: '#ffffff', textColor: '#282828', branding: false });</script>
+		<!-- Calendly badge widget end -->
+
 
 	</body>
 </html>
